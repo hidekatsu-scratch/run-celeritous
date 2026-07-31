@@ -1,1 +1,1 @@
-(function(){if(!localStorage.getItem('lang')){const s=['en-US','en-GB','ja','zh','es','ko'],l=navigator.language||navigator.userLanguage;let v='en-US';if(l)if(s.includes(l))v=l;else{const p=l.split('-')[0];v=s.includes(p)?p:(p==='en'?'en-US':'en-US')}localStorage.setItem('lang',v)}})();
+localStorage.l||=navigator.language.match(/ja|zh|es|ko/)?.[0]||'en'
