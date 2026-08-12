@@ -25,5 +25,8 @@ en:`<h1>Celeritous Execution</h1>
   <button id="codetorch"></button><button id="gandi"></button>`};
 const main=document.querySelector('.main');if(main)main.innerHTML=content[lang];}
 const file=document.getElementById('file');
-if(file){file.addEventListener('click', function() {
+if(file){file.addEventListener('click',function(){
 window.location.href = "/file";});}
+const press=document.getElementById('press');
+if(press){press.addEventListener('click',function(){
+window.location.href = "press";});}
