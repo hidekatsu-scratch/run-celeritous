@@ -1,6 +1,6 @@
 {const lang=localStorage.l;
 const content={
-ja:`<h1>Celeritous実行</h1><button id="file">ファイルで実行</button>
+ja:`<h1>Celeritous実行</h1><button id="file">ファイルで実行</button><button id="press">ファイルを圧縮/変換</button>
   <button id="scratch"></button><button id="penguinmod"></button>
   <button id="codetorch"></button><button id="gandi"></button>`,
 zh:`<h1>Celeritous 运行</h1>
