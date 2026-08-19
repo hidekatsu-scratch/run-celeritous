@@ -26,7 +26,11 @@ en:`<h1>Celeritous Execution</h1>
 const main=document.querySelector('.main');if(main)main.innerHTML=content[lang];}
 const file=document.getElementById('file');
 if(file){file.addEventListener('click',function(){
-window.location.href = "/file";});}
+window.location.href="/file";});}
 const press=document.getElementById('press');
 if(press){press.addEventListener('click',function(){
-window.location.href = "press";});}
+window.location.href="press";});}
+{const lang=localStorage.l;const titles={
+ja:"Celeritous実行",zh:"Celeritous 运行",
+es:"Ejecutar con Celeritous",ko:"Celeritous 실행",
+en:"Celeritous Execution"};document.title = titles[lang];}
