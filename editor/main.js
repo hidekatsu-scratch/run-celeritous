@@ -7,5 +7,8 @@
 <p>データを読み込み中...</p></div>`);})();
 (()=>{const s=document.createElement("style");s.textContent=`
 html, body{margin:0;padding:0;}
-
+#load{display:flex;flex-direction:column;
+align-items:center;justify-content:center;gap:10px;}
+#load p{margin-top:20px;}
 `;document.head.append(s)})()
+--> このコメント見つけられたらラッキー
