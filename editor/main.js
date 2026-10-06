@@ -8,7 +8,7 @@
 <p id="load-text">データを読み込み中...</p>
 <div id="load-progress">
 <div id="load-progress-bar"></div></div>
-<div id="load-count">0/0</div></div>`);})();
+<div id="load-count">0/0</div></div><div id="main></div>"`);})();
 (()=>{const s=document.createElement("style");s.textContent=`
 *{
   font-family:"Helvetica Neue",Arial,
@@ -19,6 +19,7 @@
 html,body{
   margin:0;
   padding:0;
+  overflow: hidden;
 }
 #load{
   display:flex;
@@ -57,5 +58,8 @@ html,body{
 }
 #load-count{
   font-size:16px;
+}
+#main{
+visibility: hidden;
 }
 `;document.head.append(s)})()
