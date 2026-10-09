@@ -62,7 +62,7 @@ html,body{
 #main{
 visibility: hidden;
 }
-`;document.head.append(s)})()
+`;document.head.append(s)})();
 (()=>{const m=document.querySelector('#editor');m.insertAdjacentHTML('beforeend', `
 <header></header><div id="editor-a><div id="editor-l">
 <div id="e-l-header"><ul><li id="e-l-h-code"><img src="https://run.celeritous.xct.f5.si"/img/editor/l-h-code.svg><span>コード</span></li>
