@@ -95,6 +95,11 @@ visibility: hidden;
   }
 })();
 
+-->初期設定
+if (typeof progressData === 'undefined') {
+  window.progressData = { load: 1, load_n: 0 };
+}
+
 document.head.insertAdjacentHTML('beforeend', '<style>#editor{display:none}</style>');
 function upb() {
   const b = document.querySelector('#load-progress-bar');
@@ -116,3 +121,4 @@ const pwt = new Proxy(progressData, {
     return true;
   }
 });
+upb();
