@@ -1,14 +1,14 @@
 (()=>{const m=document.querySelector('.main');m.insertAdjacentHTML('beforeend', `
 <div id="load" style="background-color:#5BAB77;height:100dvh">
 <div id="load-block">
-<img id="load1" src="https://run.celeritous.xct.f5.si/img/small-block.svg">
-<img id="load2" src="https://run.celeritous.xct.f5.si/img/big-block.svg">
-<img id="load3" src="https://run.celeritous.xct.f5.si/img/small-block.svg">
-<img id="load4" src="https://run.celeritous.xct.f5.si/img/big-block.svg"></div>
+<img id="load1" src="https://run.celeritous.xct.f5.si/img/small-block.svg"/>
+<img id="load2" src="https://run.celeritous.xct.f5.si/img/big-block.svg"/>
+<img id="load3" src="https://run.celeritous.xct.f5.si/img/small-block.svg"/>
+<img id="load4" src="https://run.celeritous.xct.f5.si/img/big-block.svg"/></div>
 <p id="load-text">データを読み込み中...</p>
 <div id="load-progress">
 <div id="load-progress-bar"></div></div>
-<div id="load-count">0/0</div></div><div id="main></div>"`);})();
+<div id="load-count">0/0</div></div><div id="editor"></div>`);})();
 (()=>{const s=document.createElement("style");s.textContent=`
 *{
   font-family:"Helvetica Neue",Arial,
@@ -63,3 +63,13 @@ html,body{
 visibility: hidden;
 }
 `;document.head.append(s)})()
+(()=>{const m=document.querySelector('#editor');m.insertAdjacentHTML('beforeend', `
+<header></header><div id="editor-a><div id="editor-l">
+<div id="e-l-header"><ul><li id="e-l-h-code"><img src="https://run.celeritous.xct.f5.si"/img/editor/l-h-code.svg><span>コード</span></li>
+<li id="e-l-h-cos"><img src="https://run.celeritous.xct.f5.si/img/editor/l-h-cos.svg"><span>コスチューム</span></li>
+<li id="e-l-h-mus"><img src="https://run.celeritous.xct.f5.si/img/editor/l-h-sou.svg"/><span>音</span></li>
+<li id="e-l-h-tre"><img src="https://run.celeritous.xct.f5.si/img/editor/l-h-tra.svg"/><span>トレース</span></li>
+<li id="e-l-h-ai"><img src="https://run.celeritous.xct.f5.si/img/editor/l-h-ai.svg"/><span>AI</span></li></ul></div>
+</div><div id="editor-r">
+
+</div>"`);})();
