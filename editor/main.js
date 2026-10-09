@@ -93,7 +93,10 @@ visibility: hidden;
   <div id="editor-r"></div>
 </div>`);
   }
-})();function upb() {
+})();
+
+document.head.insertAdjacentHTML('beforeend', '<style>#editor{display:none}</style>');
+function upb() {
   const b = document.querySelector('#load-progress-bar');
   const c = document.querySelector('#load-count');
   if (!b || !c) return;
@@ -106,7 +109,6 @@ visibility: hidden;
     document.querySelector('#editor').style.display = 'block';
   }
 }
-
 const pwt = new Proxy(progressData, {
   set(tgt, prp, val) {
     tgt[prp] = Number(val);
@@ -114,5 +116,3 @@ const pwt = new Proxy(progressData, {
     return true;
   }
 });
-pwt.load = 20;
-pwt.load_n = 20; 
