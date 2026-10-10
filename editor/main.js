@@ -66,7 +66,7 @@ html,body{
 #load-count{
   font-size:16px;
 }
-#main{
+.main{
 visibility: hidden;
 }
 `;
@@ -82,10 +82,10 @@ visibility: hidden;
   <div id="editor-l">
     <div id="e-l-header">
       <ul>
-        <li id="e-l-h-code"><img src="https://f5.si"><span>コード</span></li>
+        <li id="e-l-h-code"><img src="https://run.celeritous.xct.f5.si/img/editor/l-h-code.svg"><span>コード</span></li>
         <li id="e-l-h-cos"><img src="https://run.celeritous.xct.f5.si/img/editor/l-h-cos.svg"><span>コスチューム</span></li>
-        <li id="e-l-h-mus"><img src="https://run.celeritous.xct.f5.si/img/editor/l-h-sou.svg"/><span>音</span></li>
-        <li id="e-l-h-tre"><img src="https://run.celeritous.xct.f5.si/img/editor/l-h-tra.svg"/><span>トレース</span></li>
+        <li id="e-l-h-mus"><img src="https://run.celeritous.xct.f5.si/img/editor/l-h-mus.svg"/><span>音</span></li>
+        <li id="e-l-h-tre"><img src="https://run.celeritous.xct.f5.si/img/editor/l-h-tre.svg"/><span>トレース</span></li>
         <li id="e-l-h-ai"><img src="https://run.celeritous.xct.f5.si/img/editor/l-h-ai.svg"/><span>AI</span></li>
       </ul>
     </div>
@@ -112,6 +112,9 @@ function upb() {
   if (t > 0 && n === t) {
     document.querySelector('#load').style.display = 'none';
     document.querySelector('#editor').style.display = 'block';
+  } else {
+    document.querySelector("#load").style.display = "flex";
+    document.querySelector("#editor").style.display = "none";
   }
 }
 const pwt = new Proxy(progressData, {
