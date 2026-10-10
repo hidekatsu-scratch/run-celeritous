@@ -66,9 +66,6 @@ html,body{
 #load-count{
   font-size:16px;
 }
-.main{
-visibility: hidden;
-}
 `;
   document.head.append(s);
 })();
